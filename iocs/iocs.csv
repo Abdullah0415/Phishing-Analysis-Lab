@@ -1,0 +1,16 @@
+type,value,case,role,first_seen_utc,checked_utc,action,note
+domain,access-accsecurity[.]com,1,From domain (Microsoft impersonation),2023-09-08,2026-11-23,block,whois No match on 2026-11-23
+domain,thcultarfdes[.]co[.]uk,1,Return-Path / envelope domain,2023-09-08,2026-11-23,block,no SPF record
+email,sotrecognizd[@]gmail[.]com,1,Reply-To and mailto target,2023-09-08,2026-11-23,block,free mailbox controlled by attacker
+ip,89.144.44[.]2,1,sending server,2023-09-08,2026-11-23,monitor,MSCode.pl Poland data center; AbuseIPDB 0% (decayed)
+domain,vigit99[.]com,2,phishing landing domain,2026-09-30,2026-11-23,block,created 2026-07-22 GoDaddy; 5 of 6 links
+email,blake.garcia[@]organprotech88.onmicrosoft[.]com,2,spoofed From,2026-09-30,2026-11-23,block,SPF fail; DHL display name
+ip,74.125.228[.]169,2,sending server (Google),2026-09-30,2026-11-23,context-only,shared Google IP - do not block
+url,hxxps://one-lnk[.]com/x1exEpKh4Q1i491fEvFn7cpmv...,3,phishing link (Upgrade button),2023-07-26,2026-11-23,block-url-only,platform redirector; full token in private sample; NXDOMAIN at analysis
+email,info[@]kommunal[.]se,3,From (MetaMask impersonation) via abused APSIS account,2023-07-26,2026-11-23,monitor,legitimate org domain - likely abused
+ip,91.227.208[.]158,3,sending server (APSIS),2023-07-26,2026-11-23,context-only,shared platform IP - do not block
+sha256,60b31cf185f9dc99d768d4068844fc8e239ce8c32cb056d6b1b94c5a2147fe35,4,attachment AMGV2UG-K6EYVM.docx,2023-08-23,2026-11-23,block,VT 0/64 community -7; link carrier
+url,hxxps://qrco[.]de/beGfog,4,redirector link inside the .docx,2023-08-23,2026-11-23,block-url-only,QR Code Generator account blocked
+email,dono-treply-a7ibk9slwvqlkuyhe5t1[@]thanhnienviet[.]net,4,sender,2023-08-23,2026-11-23,block,Google Workspace account
+domain,thanhnienviet[.]net,4,sending domain,2023-08-23,2026-11-23,monitor,possibly compromised Workspace tenant
+ip,209.85.218[.]42,4,sending server (Google),2023-08-23,2026-11-23,context-only,shared Google IP - do not block
